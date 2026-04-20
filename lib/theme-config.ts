@@ -7,32 +7,32 @@
 
 export const siteConfig = {
   // Site metadata
-  name: 'heyzack-docs',
-  description: 'Documentation for my project',
-  url: 'https://docs.example.com',
+  name: 'HeyZack Partner Portal',
+  description: 'Documentation for the HeyZack Partner Portal smart home operations platform.',
+  url: 'https://docs.heyzack.ai',
 
   // Logo configuration
   logo: {
-    src: '/logo.svg',
-    alt: 'Unmint',
+    src: 'https://partner.heyzack.ai/assets/logo/heyzackdark.png',
+    alt: 'HeyZack',
     width: 40,
     height: 40,
   },
 
   // Navigation links
   links: {
-    github: 'https://github.com/your-org/your-repo',
-    discord: 'https://discord.gg/your-invite',
-    twitter: 'https://twitter.com/yourhandle',
-    support: 'mailto:support@example.com',
+    github: 'https://github.com/Heyzack-ai/smart-home-connect-ops',
+    discord: '',
+    twitter: '',
+    support: 'mailto:support@heyzack.ai',
   },
 
   // Footer configuration
   footer: {
-    copyright: '© 2025 Your Company. All rights reserved.',
+    copyright: '© 2026 HeyZack. All rights reserved.',
     links: [
-      { label: 'Website', href: 'https://example.com' },
-      { label: 'GitHub', href: 'https://github.com/your-org' },
+      { label: 'Website', href: 'https://heyzack.ai' },
+      { label: 'GitHub', href: 'https://github.com/Heyzack-ai/smart-home-connect-ops' },
     ],
   },
 }
@@ -42,15 +42,15 @@ export const themeConfig = {
   colors: {
     // Light mode
     light: {
-      accent: '#0891b2',        // Primary accent color
+      accent: '#e55b6b',        // Primary accent color
       accentForeground: '#ffffff',
-      accentMuted: 'rgba(8, 145, 178, 0.1)',
+      accentMuted: 'rgba(229, 91, 107, 0.12)',
     },
     // Dark mode
     dark: {
-      accent: '#22d3ee',        // Brighter for dark backgrounds
-      accentForeground: '#0f172a',
-      accentMuted: 'rgba(34, 211, 238, 0.1)',
+      accent: '#e55b6b',
+      accentForeground: '#0c0c0c',
+      accentMuted: 'rgba(229, 91, 107, 0.18)',
     },
   },
 
@@ -72,9 +72,9 @@ export const themeConfig = {
     gradient: 'linear-gradient(135deg, #ffffff 0%, #e0f7fa 50%, #67e8f9 100%)',
     // Text colors
     titleColor: '#0f172a',
-    sectionColor: '#0891b2',
+    sectionColor: '#e55b6b',
     // Logo URL (absolute URL required for OG images)
-    logoUrl: 'https://example.com/logo.png',
+    logoUrl: 'https://partner.heyzack.ai/assets/logo/heyzackdark.png',
   },
 }
 

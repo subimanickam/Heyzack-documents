@@ -1,0 +1,179 @@
+---
+title: "Add, edit, and track leads in your pipeline"
+description: "Step-by-step instructions for creating, editing, deleting, and navigating leads, including Kanban drag-and-drop and search filtering."
+---
+
+Managing leads in the HeyZack Partner Portal covers the full lifecycle of an opportunity — from logging the first contact through to updating details as the deal progresses. This page walks you through every action you can take on a lead.
+
+## Adding a new lead
+
+To create a lead, click **New Lead** in the top-right corner of the Leads page. A dialog opens with a form containing the following fields:
+
+<AccordionGroup>
+  <Accordion title="Required fields">
+    - **Lead name** — A descriptive label for the opportunity. This is the primary identifier shown in list and Kanban views.
+    - **Email** — The customer's email address. The portal validates that the value is a properly formatted email before saving.
+    - **Priority** — Choose **High**, **Medium**, or **Low**. Defaults to High.
+  </Accordion>
+  <Accordion title="Optional fields">
+    - **Contact number** — Customer phone number.
+    - **Location** — Site or service address.
+    - **Value** — Estimated deal value in EUR. Enter a number without the currency symbol.
+    - **Installation partner** — Select a partner from the dropdown to assign responsibility for the installation.
+    - **Source** — Where the lead came from. The list is populated dynamically from your account's configured sources.
+    - **Contact date** — The date you first made contact. Use the date picker to select a value.
+    - **Follow-up date** — The next scheduled follow-up date.
+    - **Notes** — Any free-text notes you want to record at creation time.
+  </Accordion>
+</AccordionGroup>
+
+<Steps>
+  <Step title="Open the Add Lead dialog">
+    Click **New Lead** in the top-right corner of the Leads page.
+  </Step>
+  <Step title="Fill in the required fields">
+    Enter a **Lead name**, a valid **Email**, and select a **Priority**. These three fields are required before you can save.
+  </Step>
+  <Step title="Complete the optional fields">
+    Add contact number, location, value, source, dates, and any initial notes as needed.
+  </Step>
+  <Step title="Save the lead">
+    Click **Add Lead**. The portal saves the record and refreshes the lead list to include the new entry.
+  </Step>
+</Steps>
+
+<Note>
+Priority labels support both English and French. You select the English label in the form; the portal displays the appropriate label based on the interface language.
+</Note>
+
+## Editing a lead
+
+You can edit any lead directly from the list view without opening the full detail page.
+
+<Steps>
+  <Step title="Find the lead">
+    Locate the lead in the list view using the search bar or status filter if needed.
+  </Step>
+  <Step title="Click Edit">
+    Click the **Edit** button (pencil icon) on the lead row. The same Add Lead dialog opens, pre-filled with the current values.
+  </Step>
+  <Step title="Update the fields">
+    Change any fields you need to update.
+  </Step>
+  <Step title="Save your changes">
+    Click **Update Lead**. The portal saves the changes and refreshes the list.
+  </Step>
+</Steps>
+
+## Deleting a lead
+
+Deleting a lead permanently removes it from the portal. This action cannot be undone.
+
+<Steps>
+  <Step title="Click Delete">
+    Click the **Delete** button (trash icon) on the lead row in list view. A confirmation dialog appears asking you to confirm the deletion.
+  </Step>
+  <Step title="Confirm the deletion">
+    Review the lead name shown in the confirmation dialog, then click **Delete** to proceed. Click **Cancel** to abort without making any changes.
+  </Step>
+</Steps>
+
+<Warning>
+Deleting a lead removes all associated data including notes, documents, and timeline history. Make sure you no longer need the record before confirming.
+</Warning>
+
+## Viewing lead details
+
+Clicking anywhere on a lead row opens the Lead Details page for that lead. The detail page is organised into five tabs:
+
+| Tab | What you'll find |
+|---|---|
+| **Details** | Contact information (name, phone, location, source) and lead information (value, creation date, assigned to) |
+| **Quotes** | Quotes attached to this lead |
+| **Timeline** | A chronological history of all activity on the lead |
+| **Notes** | A running log of notes you and your team have added |
+| **Documents** | Files attached to the lead (PDFs, images) |
+
+Use the back arrow in the top-left of the detail page to return to the Leads list.
+
+### Adding and managing notes
+
+Open the **Notes** tab on any lead detail page to add, edit, or delete notes.
+
+<Steps>
+  <Step title="Type your note">
+    Enter your text in the note input field.
+  </Step>
+  <Step title="Save the note">
+    Click **Add Note**. The note appears at the top of the note history with your name and a timestamp.
+  </Step>
+</Steps>
+
+To edit an existing note, click **Edit** on the note, update the text, then click **Save**. To delete a note, click **Delete** on the note entry.
+
+### Uploading documents
+
+Open the **Documents** tab to attach files to a lead. Supported formats are PDF, PNG, and JPEG. Maximum file size is 20 MB per file.
+
+<Steps>
+  <Step title="Select files">
+    Click the upload area or drag files onto it. Selected files appear as a list inside the upload zone.
+  </Step>
+  <Step title="Upload">
+    Click **Upload**. A loading indicator shows progress. When complete, the files appear in the document list below the upload area.
+  </Step>
+</Steps>
+
+To download a document, click **Download** on the file entry. To delete a document, click **Delete** and confirm in the dialog that appears.
+
+## Lead priority levels
+
+Every lead has a priority that signals how urgently it should be worked. Priorities are displayed as colour-coded badges throughout the portal.
+
+| Priority | Badge colour | When to use |
+|---|---|---|
+| **High** (Haute) | Red | Leads that need immediate attention or are at risk of going cold |
+| **Medium** (Moyenne) | Yellow | Leads that are active but not urgent |
+| **Low** (Basse) | Green | Leads that are in early stages or have a longer timeline |
+
+<Tip>
+Keep priorities up to date as leads progress. A lead that was High priority at creation may become Medium once the quote has been sent and you are waiting on a response.
+</Tip>
+
+## Lead sources
+
+The **Source** field records how a lead was originated. The list of available sources is loaded dynamically from your account configuration, so the options you see reflect the channels your organisation tracks (for example, referrals, website enquiries, trade shows, or direct outreach).
+
+If you need a new source added to the list, contact your account administrator.
+
+## Searching and filtering
+
+The search bar and status filter at the top of the Leads page work together to help you find specific leads quickly.
+
+- **Search** — Type any part of a customer name, contact number, or location. Results update as you type.
+- **Status filter** — Select a status from the dropdown to show only leads at that stage. Select **All Leads** to clear the filter.
+
+The total count shown next to the list heading reflects the number of leads that match your current search and filter combination.
+
+## Using Kanban view
+
+Kanban view displays your pipeline as a set of columns, one for each status. Each lead appears as a card showing the customer name, location, priority badge, deal value, and quote count.
+
+<Steps>
+  <Step title="Switch to Kanban">
+    Click the **Kanban** button in the filter bar to switch from list view.
+  </Step>
+  <Step title="Review your columns">
+    Each column represents one status. The column header shows the status name and the number of leads in that stage.
+  </Step>
+  <Step title="Move a lead">
+    Drag a lead card from its current column and drop it onto the target column. The lead's status updates immediately to match the column it was dropped into.
+  </Step>
+  <Step title="Open a lead">
+    Click on any lead card to open the full Lead Details page.
+  </Step>
+</Steps>
+
+<Note>
+The search bar and status filter also apply in Kanban view. If you have a status filter active, only the matching column is populated with leads.
+</Note>

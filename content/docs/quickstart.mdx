@@ -1,110 +1,116 @@
 ---
-title: Quick Start
-description: Get your documentation site up and running in under 5 minutes
+title: "Get started with the HeyZack Partner Portal"
+description: "Learn how to sign in to the HeyZack Partner Portal and complete your first workflow: add a lead, create a customer record, and schedule an installation."
 ---
 
-This guide will help you set up Unmint and create your first documentation page.
+The HeyZack Partner Portal gives you everything you need to run your smart home installation business in one place. This guide walks you through signing in for the first time and completing the core workflow so you can start managing real jobs straight away.
 
-## Prerequisites
+<Note>
+  Your partner account is created by HeyZack when your partner agreement is activated. You will receive your login credentials by email. If you haven't received them, contact your HeyZack account manager before continuing.
+</Note>
 
-Before you begin, make sure you have:
-
-- **Node.js 18+** installed
-- **npm** or **pnpm** package manager
-- A code editor (VS Code recommended)
-
-## Installation
+## Sign in to the portal
 
 <Steps>
-  <Step title="Clone the repository">
-    Start by cloning the Unmint template:
-
-    ```bash
-    git clone https://github.com/gregce/unmint.git my-docs
-    cd my-docs
-    ```
+  <Step title="Go to the sign-in page">
+    Open the HeyZack Partner Portal in your browser and navigate to the sign-in page. You'll see the HeyZack logo and a form asking for your email and password.
   </Step>
-
-  <Step title="Install dependencies">
-    Install the required npm packages:
-
-    ```bash
-    npm install
-    ```
+  <Step title="Enter your credentials">
+    Type the email address and password that were sent to you when your account was activated. Click the eye icon next to the password field if you want to check what you've typed.
   </Step>
+  <Step title="Click Sign in">
+    Click **Sign In**. If your credentials are correct, the portal redirects you to the dashboard.
 
-  <Step title="Start the development server">
-    Launch the local development server:
-
-    ```bash
-    npm run dev
-    ```
-
-    Open [http://localhost:3000](http://localhost:3000) in your browser.
-  </Step>
-
-  <Step title="Create your first page">
-    Add a new MDX file in `content/docs/`:
-
-    ```mdx
-    ---
-    title: My First Page
-    description: A description of my page
-    ---
-
-    # Hello World
-
-    This is my first documentation page!
-    ```
+    <Warning>
+      If this is your first time signing in, the portal may prompt you to set a new password before you can continue. Follow the on-screen steps to create a permanent password. See [Reset your password on first login](/authentication#reset-your-password-on-first-login) for details.
+    </Warning>
   </Step>
 </Steps>
 
-## Project Structure
+## What you see when you first log in
 
-Here's an overview of the key directories:
-
-```
-my-docs/
-├── app/                    # Next.js app directory
-│   ├── docs/              # Documentation routes
-│   └── components/        # UI components
-├── content/
-│   └── docs/              # Your MDX documentation files
-│       ├── index.mdx      # Homepage
-│       └── meta.json      # Navigation structure
-├── lib/
-│   └── theme-config.ts    # Customize your theme here
-└── public/                # Static assets
-```
-
-## Adding Navigation
-
-Edit `content/docs/meta.json` to configure your sidebar navigation:
-
-```json
-{
-  "title": "Documentation",
-  "pages": [
-    "index",
-    "quickstart",
-    "---Getting Started---",
-    "installation",
-    "configuration"
-  ]
-}
-```
-
-<Info>
-Use `"---Section Name---"` to create section separators in your sidebar.
-</Info>
-
-## Next Steps
+After signing in, you land on the **Dashboard** — your operational overview for the day. Here's what you'll find:
 
 <CardGroup cols={2}>
-  <Card title="Learn Components" icon="code" href="/docs/components">
-    Explore all available MDX components
+  <Card title="KPI summary" icon="chart-bar">
+    At-a-glance metrics for leads, active installations, completed jobs, and revenue for the current period.
   </Card>
-  <Card title="Customize Theme" icon="gear" href="/docs/theming">
-    Match your brand colors and styling
+  <Card title="Upcoming installations" icon="calendar">
+    A list of jobs scheduled for the next few days, with the assigned handyman and status for each.
+  </Card>
+  <Card title="Partner tier" icon="award">
+    Your current partner tier and progress toward the next tier based on monthly revenue.
+  </Card>
+  <Card title="Recent activity" icon="clock-rotate-left">
+    A feed of recent updates across leads, customers, and installations.
+  </Card>
+</CardGroup>
+
+The left sidebar gives you access to every section of the portal: **Leads**, **Customers**, **Installations**, **Handymen**, **Inventory**, **Reports**, and **Settings**.
+
+## Your first workflow
+
+Follow these steps to complete the core partner workflow from new inquiry to scheduled job.
+
+<Steps>
+  <Step title="Add a lead">
+    When a potential customer contacts you, create a lead to track the opportunity.
+
+    1. Click **Leads** in the sidebar.
+    2. Click **Add Lead** in the top-right corner.
+    3. Fill in the customer's name, contact details, and any notes about what they're interested in.
+    4. Set the lead status to **New** and click **Save**.
+
+    Your lead now appears in the pipeline. As you progress through quoting conversations, update the status to reflect where things stand.
+
+    <Tip>
+      Use the Kanban view to drag leads between statuses as they progress. Switch between Kanban and list view using the toggle at the top of the Leads page.
+    </Tip>
+  </Step>
+  <Step title="Add a customer">
+    Once a lead converts — meaning the customer agrees to move forward — create a customer record for them.
+
+    1. Click **Customers** in the sidebar.
+    2. Click **Add Customer**.
+    3. Enter the customer's full details: name, email, phone, and address.
+    4. Click **Save**.
+
+    The customer record stores their contact information and builds a history of all installations linked to their account.
+  </Step>
+  <Step title="Schedule an installation">
+    With a customer record in place, you can schedule the installation job.
+
+    1. Click **Installations** in the sidebar.
+    2. Click **Schedule Installation**.
+    3. Select the customer from the dropdown.
+    4. Choose a date and time for the job.
+    5. Assign a handyman from your team.
+    6. Add any notes about the job scope or site requirements.
+    7. Click **Save**.
+
+    The installation appears on your calendar and in the assigned handyman's schedule.
+
+    <Note>
+      Your handyman must already be registered in the portal before you can assign them to a job. Go to **Handymen** in the sidebar to add team members.
+    </Note>
+  </Step>
+</Steps>
+
+## What to do next
+
+Now that you've completed your first workflow, explore the rest of the portal:
+
+<CardGroup cols={2}>
+  <Card title="Manage your leads" icon="funnel" href="/leads/overview">
+    Learn how to work the full lead pipeline, from first contact to closed deal.
+  </Card>
+  <Card title="Track installations" icon="screwdriver-wrench" href="/installations/overview">
+    See how installation statuses work and how to keep jobs moving.
+  </Card>
+  <Card title="Order devices" icon="box" href="/inventory/overview">
+    Browse and order smart home devices through the integrated storefront.
+  </Card>
+  <Card title="Understand your dashboard" icon="chart-line" href="/dashboard/overview">
+    Get the most out of the KPIs, charts, and partner tier tracking on your dashboard.
   </Card>
 </CardGroup>

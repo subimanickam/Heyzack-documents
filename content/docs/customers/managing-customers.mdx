@@ -1,0 +1,123 @@
+---
+title: "Add, edit, and manage your customer records"
+description: "Step-by-step instructions for adding new customers, editing existing records, deleting customers, and reviewing installation history."
+---
+
+The HeyZack Partner Portal gives you full control over your customer database. You can add new customers manually, update any field on an existing record, delete customers you no longer need, and drill into a customer's detail page to see their complete installation history — all from the **Customers** section.
+
+## Add a new customer
+
+<Steps>
+  <Step title="Open the Add Customer dialog">
+    On the Customers page, click **Add Customer**. The dialog opens with a blank form.
+  </Step>
+  <Step title="Fill in the required fields">
+    Complete every required field before saving:
+
+    | Field | Required | Notes |
+    |---|---|---|
+    | **Customer name** | Yes | Full name of the customer |
+    | **Email** | Yes | Must be a valid email address |
+    | **Phone** | Yes | Contact phone number |
+    | **Address** | Yes | Service address for installations |
+
+    <Note>
+      All four fields — name, email, phone, and address — are required. The form will not submit if any of them are blank or if the email address is not in a valid format.
+    </Note>
+  </Step>
+  <Step title="Save the record">
+    Click **Add Customer** to create the record. The new customer appears in your list immediately.
+  </Step>
+</Steps>
+
+## Edit a customer record
+
+You can edit a customer from the list or from the customer's detail page.
+
+**From the list:**
+
+<Steps>
+  <Step title="Find the customer">
+    Use the search bar to locate the customer, or browse the list.
+  </Step>
+  <Step title="Click Edit">
+    Click the **Edit** button on the customer's row. The edit dialog opens pre-filled with the current values.
+  </Step>
+  <Step title="Update the fields">
+    Change any combination of name, email, phone, or address.
+  </Step>
+  <Step title="Save your changes">
+    Click **Update Customer** to apply the changes. The list refreshes with the updated values.
+  </Step>
+</Steps>
+
+**From the detail page:**
+
+Open the customer's detail page, then click the **Edit** button in the top-right corner of the record. The same edit dialog appears. Click **Save changes** when you are done.
+
+## Delete a customer
+
+<Warning>
+  Deleting a customer is permanent and cannot be undone. The record, along with its association to any installations, will be removed from your account.
+</Warning>
+
+<Steps>
+  <Step title="Locate the customer">
+    Find the customer in list view or grid view.
+  </Step>
+  <Step title="Click Delete">
+    Click the **Delete** (trash) icon on the customer's card or row.
+  </Step>
+  <Step title="Confirm deletion">
+    A confirmation dialog asks you to verify the action. Review the customer's name, then click **Delete** to proceed. Click **Cancel** to go back without making any changes.
+  </Step>
+</Steps>
+
+## View customer details
+
+Click anywhere on a customer's row in list view, or click the **View** button, to open the customer detail page. This page is divided into four tabs:
+
+<CardGroup cols={2}>
+  <Card title="Details" icon="address-card">
+    Full contact information — name, email, phone, and address — plus account metadata including the creation date and last updated date.
+  </Card>
+  <Card title="Installations" icon="screwdriver-wrench">
+    Every installation job linked to this customer, including the job title, current status, scheduled date, and any completion photos uploaded by your handymen.
+  </Card>
+  <Card title="Timeline" icon="clock-rotate-left">
+    A chronological activity log showing key events across the customer's lifecycle.
+  </Card>
+  <Card title="Contact" icon="phone">
+    Quick-access contact actions — view the customer's phone number or send them an email directly from the portal.
+  </Card>
+</CardGroup>
+
+## View a customer's installation history
+
+Open the customer detail page and select the **Installations** tab. Each installation entry shows:
+
+- **Title** — the name of the installation job
+- **Status** — the current stage of the installation (for example, Scheduled, Started, or Completed)
+- **Scheduled date** — when the job is planned
+- **Completion photos** — thumbnails of photos uploaded at job completion; click any thumbnail to open the full-size image viewer
+
+<Tip>
+  If a customer has more than two completion photos on a single installation, a **+N** button appears next to the thumbnails. Click it to open the photo viewer and browse all images.
+</Tip>
+
+## Customer statuses
+
+A customer's status reflects their current relationship with your business:
+
+| Status | Meaning |
+|---|---|
+| **Active** | The customer has an open or recently completed engagement. New customers are set to active by default. |
+| **Inactive** | The customer's engagement has ended or been paused. Inactive records remain in your database and can be searched or reactivated. |
+
+In grid view, you can drag a customer card from the **Active** column to the **Inactive** column (or vice versa) to update their status without opening the edit dialog.
+
+## Search and pagination
+
+The search bar on the Customers page matches against name, email, and phone number simultaneously. Filtered results respect the current status filter if one is applied.
+
+The list displays **10 customers per page**. Use the **Previous** and **Next** buttons — or click a specific page number — to move through the full dataset. If you search or change filters while on a later page, the view resets to page 1 so you always see the most relevant results first.

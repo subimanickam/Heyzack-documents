@@ -1,13 +1,17 @@
 {
-  "title": "Documentation",
+  "title": "HeyZack Docs",
   "pages": [
     "index",
     "quickstart",
-    "---Getting Started---",
-    "components",
-    "theming",
-    "---Guides---",
-    "deployment",
-    "customization"
+    "authentication",
+    "---Product Modules---",
+    "dashboard",
+    "leads",
+    "customers",
+    "installations",
+    "handymen",
+    "inventory",
+    "reports",
+    "settings"
   ]
 }

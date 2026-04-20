@@ -46,7 +46,7 @@ export function DocsHeader({ tree }: DocsHeaderProps) {
                     alt={siteConfig.logo.alt}
                     width={siteConfig.logo.width}
                     height={siteConfig.logo.height}
-                    className="dark:invert"
+                    className="dark:invert w-auto h-auto"
                   />
                 )}
                 <span className="font-semibold text-lg hidden sm:inline">{siteConfig.name}</span>

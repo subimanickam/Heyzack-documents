@@ -14,6 +14,13 @@ import { Frame } from './frame'
 import { YouTube } from './youtube'
 import { Pre } from './pre'
 
+function normalizeDocsHref(href?: string): string {
+  if (!href) return ''
+  if (href.startsWith('http') || href.startsWith('#') || href.startsWith('/docs')) return href
+  if (href.startsWith('/')) return `/docs${href}`
+  return href
+}
+
 // Re-export for direct imports
 export { Card, CardGroup } from './card'
 export { Info, Tip, Warning, Note, Check } from './callout'
@@ -90,7 +97,7 @@ export function getMDXComponents(): MDXComponents {
         )
       }
       return (
-        <Link href={href || ''} className="text-[var(--accent)] hover:underline">
+        <Link href={normalizeDocsHref(href)} className="text-[var(--accent)] hover:underline">
           {children}
         </Link>
       )
@@ -163,5 +170,9 @@ export function getMDXComponents(): MDXComponents {
       <strong className="font-semibold text-foreground">{children}</strong>
     ),
     em: ({ children }) => <em className="italic">{children}</em>,
+    script: ({ children }) => {
+      const templateContent = typeof children === 'string' ? children : ''
+      return <template>{templateContent}</template>
+    },
   }
 }
