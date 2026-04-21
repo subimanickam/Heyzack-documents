@@ -21,19 +21,16 @@ export const siteConfig = {
 
   // Navigation links
   links: {
-    github: 'https://github.com/Heyzack-ai/smart-home-connect-ops',
+    github: '',
     discord: '',
     twitter: '',
-    support: 'mailto:support@heyzack.ai',
+    support: 'mailto:heyzackai@gmail.com',
   },
 
   // Footer configuration
   footer: {
     copyright: '© 2026 HeyZack. All rights reserved.',
-    links: [
-      { label: 'Website', href: 'https://heyzack.ai' },
-      { label: 'GitHub', href: 'https://github.com/Heyzack-ai/smart-home-connect-ops' },
-    ],
+    links: [{ label: 'Website', href: 'https://heyzack.ai' }],
   },
 }
 
